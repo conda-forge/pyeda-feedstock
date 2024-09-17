@@ -10,7 +10,7 @@ source:
   sha256: efd4d3e548079ca059f44f9babb9bd67b332ec1762897324fcceb8da1d0f5fed
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   script_env:
     - CFLAGS=-Wno-incompatible-pointer-types
