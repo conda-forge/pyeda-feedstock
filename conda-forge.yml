@@ -7,3 +7,6 @@ github:
   branch_name: main
   tooling_branch_name: main
 test: native_and_emulated
+bot:
+  abi_migration_branches:
+    - "v0.28.x"
