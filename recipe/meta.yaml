@@ -1,5 +1,5 @@
 {% set name = "pyeda" %}
-{% set version = "0.29.0" %}
+{% set version = "0.28.0" %}
 
 package:
   name: {{ name | lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: efd4d3e548079ca059f44f9babb9bd67b332ec1762897324fcceb8da1d0f5fed
+  sha256: 07185f458d5d0b2ba5058da8b95dad6ab7684ceaf41237a25bcd3f005490f59d
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   script_env:
     - CFLAGS=-Wno-incompatible-pointer-types
